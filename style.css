@@ -1,0 +1,143 @@
+/*
+*
+* @author Alex Rodrigues
+* @version 0.1
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Chuck-Noon";
+  src:url("fonts/Chuck-Noon.ttf");
+}
+@font-face {
+  font-family: "HALTER__";
+  src:url("fonts/HALTER__.ttf");
+}
+@font-face {
+  font-family: "Mousse-Regular";
+  src:url("fonts/Mousse-Regular.otf");
+}
+/* ===================== layout ===================== */
+html, body, .capa {
+  height: 100%;
+}
+
+body {
+  background: url('imagens/header.jpg') no-repeat;
+				/*linear-gradient(50deg,#000000,#f0f0f0,#000000);*/
+	background-attachment: fixed;
+  background-size: 100% 100%;
+  font-family: "HALTER__", Helvetica,Arial,sans-serif;
+  overflow-x: hidden;
+}
+
+/*Menu - Navegação*/
+nav.navbar-transparente {
+  padding: 2px 0;
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
+}
+
+.navbar-inverse .navbar-nav>li>a, footer .nav a {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover {
+	color: #fbbc05;
+	background: none;
+}
+
+/* ===== Header - Capa =====*/
+.capa {
+	display: table;
+	width: 100%;
+}
+.texto-capa {
+	text-align: center;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+  font-family: "Chuck-Noon";
+}
+.texto-capa h1 {
+  color: #fbbc05;
+  padding: 1%;
+  font-size: 37px;
+}
+
+/* ===== Galeria | Sites =====*/
+#galeria .container-fluid {
+  background: #ffffff;
+  height: 100%;
+  padding: 5%;
+}
+#galeria .container-fluid h1 {
+  font-family: "Chuck-Noon";
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+#sites .container-fluid {
+  background: #ffffff;
+  height: 100%;
+  padding: 50px 50px;
+  border-top: solid 1px #999999;
+}
+#sites .container-fluid h1 {
+  font-family: "Chuck-Noon";
+  font-weight: bold;
+  text-align: center;
+}
+.img-thumbnail:hover{
+  transform: scale(1.04);
+}
+
+/*===== Sobre =====*/
+#sobre {
+  background: #000000;
+  padding: 25px 5px;
+}
+#sobre .container h4 {
+  padding: 20px;
+  text-align:center;
+  color: #ffffff;
+}
+#sobre .container p {
+  color: #ffffff;
+  margin: 25%;
+}
+.foto {
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+/* ===== Contato =====*/
+#contato {
+  background: #ffffff;
+  padding: 25px 5px;
+}
+
+/* ===== Footer =====*/
+#footer {
+  background: #000000;
+  padding: 25px 5px;
+}
+#footer .rodape {
+  color: #ffffff;
+}
+
+/*===== MEDIAS QUERIES =====*/
+@media screen and (min-width: 992px) {
+  .texto-capa h1 {
+    font-size: 70px;
+  }
+}
+@media screen and (min-height: 1000px) {
+  .texto-capa h1 {
+    font-size: 70px;
+  }
+}

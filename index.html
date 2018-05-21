@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- As 3 meta tags acima *devem* vir em primeiro lugar dentro do `head`; qualquer outro conteúdo deve vir *após* essas tags -->
+    <title>Título</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- HTML5 shim e Respond.js para suporte no IE8 de elementos HTML5 e media queries -->
+    <!-- ALERTA: Respond.js não funciona se você visualizar uma página file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top navbar-inverse navbar-transparente">
+      <div class="container">
+
+        <!-- header -->
+        <div class="navbar-header">
+
+          <!-- botao toggle -->
+          <button type="button" class="navbar-toggle collapsed"
+                  data-toggle="collapse" data-target="#barra-navegacao">
+            <span class="sr-only">alternar navegação</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a href="index.html" class="navbar-brand">
+            <span class="img-logo">&lt;Nome-Logo&gt;</span>
+          </a>
+
+        </div>
+
+        <!-- navbar -->
+        <div class="collapse navbar-collapse" id="barra-navegacao">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div><!-- /container -->
+    </nav><!-- /nav -->
+
+    <div class="capa">
+      <div class="texto-capa">
+        <h1>Título Página</h1>
+        <h3>Outras Descrições</h3>
+      </div>
+    </div>
+
+    <!-- Conteudo -->
+    <section id="galeria">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-md-12">
+
+            <h1>título</h1>
+            <div class="row line">
+              <div class="col-xs-12 col-sm-6 col-md-3 column">
+                <a href="" class="thumbnail">
+                  <img src="" class="img-responsive img-thumbnail">
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 column">
+                <a href="" class="thumbnail">
+                  <img src="" class="img-responsive img-thumbnail">
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 column">
+                <a href="" class="thumbnail">
+                  <img src="" class="img-responsive img-thumbnail">
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 column">
+                <a href="" class="thumbnail">
+                  <img src="" class="img-responsive img-thumbnail">
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 column">
+                <a href="" class="thumbnail">
+                  <img src="" class="img-responsive img-thumbnail">
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 column">
+                <a href="" class="thumbnail">
+                  <img src="" class="img-responsive img-thumbnail">
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-3 column">
+                <a href="" class="thumbnail">
+                  <img src="" class="img-responsive img-thumbnail">
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div><!-- /container-fluid -->
+    </section><!-- /galeria -->
+
+    <section id="sites">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 cont-site">
+
+            <h1>título</h1>
+            <div class="row line">
+              <div class="col-xs-12 col-sm-6 col-md-3 column">
+                <a href="" class="thumbnail">
+                  <img src="" class="img-responsive img-thumbnail">
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div> <!-- /container-fluid -->
+    </section> <!-- /sites -->
+
+    <!-- Sobre Min -->
+    <section id="sobre">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6 vertical-align">
+            <p>
+              Descrição
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h4>Descrição</h4>
+            <div>
+              <img src="" class="img-responsive foto">
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /container -->
+    </section><!-- /sobre -->
+
+    <!-- Contato -->
+    <section id="contato">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Contato</h3>
+            <form action="enviaEmail.php" method="post">
+              <div class="form-group">
+                <input class="form-control" type="text" name="nome" placeholder="Nome Completo">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="email" name="email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" name="assunto" placeholder="Assunto">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" type="text" name="mensagem" rows="5" placeholder="Mensagem"></textarea>
+              </div>
+              <button type="submit" class="btn btn-default">Enviar</button>
+            </form>
+
+          </div>
+        </div>
+
+      </div><!-- /container -->
+    </section><!-- /contato -->
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="rodape">
+              &copy; 2017 - Alex Rodrigues
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /container -->
+    </footer><!-- /footer -->
+
+    <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
